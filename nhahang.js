@@ -5,7 +5,7 @@ let displayedDrinkCount = 3; // Số đồ uống hiển thị ban đầu
 
 // Lấy dữ liệu món ăn
 function fetchFoodData() {
-    fetch("https://api.api-ninjas.com/v1/nutrition?query=pho", {
+    fetch("https://api.api-ninjas.com/v1/recipe?query=food", {
         method: "GET",
         headers: {
             "X-Api-Key": "WcYaIYifsTC+GUFKu+Imhg==goORcM3II5gdfa0F",
@@ -22,7 +22,7 @@ function fetchFoodData() {
 
 // Lấy dữ liệu đồ uống
 function fetchDrinkData() {
-    fetch("https://api.api-ninjas.com/v1/nutrition?query=lemonade", {
+    fetch("https://api.api-ninjas.com/v1/recipe?query=drink", {
         method: "GET",
         headers: {
             "X-Api-Key": "WcYaIYifsTC+GUFKu+Imhg==goORcM3II5gdfa0F",
